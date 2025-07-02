@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mintor Options AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mintor Options AI 🔮</h1>
+    <label for="index">Select Index:</label>
+    <select id="index">
+      <option value="NIFTY">NIFTY</option>
+      <option value="BANKNIFTY">BANKNIFTY</option>
+    </select>
+
+    <label for="expiry">Expiry Date:</label>
+    <input type="date" id="expiry" />
+
+    <button onclick="predict()">Predict</button>
+
+    <div id="result" class="result-box">
+      <!-- Prediction result will appear here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
